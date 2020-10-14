@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantas herbáceas</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        display: grid;
+        background-color: #5bf035b9;
+        gap: 10px;
+        margin-bottom: 30px;
+        grid-template-columns: 14% 40% 32% 14%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          ". nav nav ."
+          ". imagen1 imagen1 ."
+          ". parrafo1 parrafo1 ."
+          ". parrafo2 imagen2 .";
+      }
+
+      #nav {
+        grid-area: nav;
+      }
+      #imagen1 {
+        grid-area: imagen1;
+        width: 100%;
+      }
+      #parrafo1 {
+        grid-area: parrafo1;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #parrafo2 {
+        grid-area: parrafo2;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #imagen2 {
+        grid-area: imagen2;
+        width: 100%;
+        padding: 10px;
+        border: solid 2px rgb(27, 109, 6);
+        background-color: rgba(27, 109, 6, 0.274);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="lavanda de mar.jpg"
+      alt="ejemplo de planta herbácea"
+      id="imagen1"
+    />
+
+    <div id="parrafo1">
+      <style>
+        h1 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          line-height: 80%;
+        }
+      </style>
+      <h1>Plantas herbáceas</h1>
+      <p>
+        Las herbáceas, comúnmente llamadas hierbas, son sin duda el tipo de
+        planta más extendido en el mundo. Esto se debe sobre todo a su gran
+        capacidad de crecimiento y de
+        <a href="https://dle.rae.es/germinar?m=form">germinación</a>, además de
+        su alta adaptabilidad y resistencia.
+      </p>
+      <p>
+        La característica que define a una planta como herbácea es su ausencia
+        de tallos leñosos, a diferencia de los arbustos y árboles. Producen
+        además, <b>hojas y tallos de color verde</b> en la gran mayoría de
+        ocasiones, y muchas son de floraciones terminales y abundantes.
+      </p>
+      <p>
+        Estas plantas son muy usadas en jardinería por el valor estético de sus
+        flores, además de como
+        <a
+          href="https://jardineriaplantasyflores.com/plantas-tapizantes-rastreras-o-cubresuelos/"
+          >plantas tapizantes</a
+        >
+        para cubrir desde pequeños parterres a grandes plantaciones, aunque hay
+        una gran cantidad de plantas herbáceas silvestres y podemos encontrar
+        incluso plantas herbáceas comestibles. Tampoco se deben olvidar sus
+        <b>propiedades medicinales</b>, que muchas de ellas ofrecen en sus
+        aceites esenciales o en forma de infusión.
+      </p>
+    </div>
+
+    <div id="parrafo2">
+      <style>
+        h2 {
+          font-family: "Courier New", Courier, monospace;
+          font-weight: bold;
+        }
+      </style>
+      <h2>la Caléndula:</h2>
+      <p>
+        Calendula, llamado comúnmente caléndula o margarita, es un género de
+        entre 12 a 20 especies de hierbas anuales o perennes de la familia de
+        las asteráceas, nativas de la región mediterránea y el Asia Menor.
+      </p>
+      <p>
+        Son hierbas de escasa altura (40 o 50 cm), de
+        <b>tallos erectos y ramificados</b> desde la base formando densas matas;
+        con hojas lanceoladas, simples, ligeramente pubescentes, de entre 5 y 20
+        cm de largo. Las flores son discoidales, amarillas a naranja intenso, y
+        muy vistosas. Algunas especies, entre ellas la llamada comúnmente botón
+        de oro (Calendula officinalis), están en flor casi todo el año; su
+        nombre científico proviene de las calendas, el nombre dado por los
+        latinos al primer día del mes, por juzgarse similar la frecuencia de su
+        floración.
+      </p>
+    </div>
+    <img src="calendula.jpg" alt="ejemplo de caléndula" id="imagen2" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="Tipos de plantas.html">PLANTAS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Arboles.html">Arboles</a>
+          <a class="nav-link" href="Plantas herbáceas.html"
+            >Plantas herbáceas</a
+          >
+          <a class="nav-link" href="Sin flores.html"
+            >Plantas in flores (Criptógamas)</a
+          >
+          <a class="nav-link" href="Con flores.html"
+            >Plantas con flores (Fanerógamas)</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

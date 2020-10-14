@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arboles</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        display: grid;
+        background-color: #5bf035b9;
+        gap: 10px;
+        margin-bottom: 30px;
+        grid-template-columns: 14% 40% 32% 14%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          ". nav nav ."
+          ". imagen1 imagen1 ."
+          ". parrafo1 parrafo1 ."
+          ". parrafo2 imagen2 .";
+      }
+
+      #nav {
+        grid-area: nav;
+      }
+      #imagen1 {
+        grid-area: imagen1;
+        width: 100%;
+      }
+      #parrafo1 {
+        grid-area: parrafo1;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #parrafo2 {
+        grid-area: parrafo2;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #imagen2 {
+        grid-area: imagen2;
+        width: 100%;
+        padding: 10px;
+        border: solid 2px rgb(27, 109, 6);
+        background-color: rgba(27, 109, 6, 0.274);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="arbol2.jpg" alt="ejemplo de arbol" id="imagen1" />
+
+    <div id="parrafo1">
+      <style>
+        h1 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          line-height: 80%;
+        }
+      </style>
+      <h1>Arboles</h1>
+      <p>
+        Un árbol se define como una <b>planta leñosa perenne</b>, que
+        típicamente tiene un solo tallo o tronco que crece a una altura
+        considerable y que tiene ramas laterales a cierta distancia del suelo.
+      </p>
+      <p>
+        Los árboles generalmente tienen <b>al menos 13 pies de altura</b>,
+        tienen un tronco de al menos tres pulgadas de diámetro y una corona
+        definida. Los arbustos, por otro lado, son plantas leñosas que
+        generalmente crecen cerca del suelo y no crecen más de 13 pies de
+        altura. Tienen múltiples tallos, en lugar de un solo tronco, y no tienen
+        una corona definida. Por supuesto, hay muchas especies de árboles
+        verdaderos que pueden ser entrenados para no crecer más allá de cierta
+        altura y se mantienen pequeños para propósitos ornamentales. Esto se
+        considera el arte del
+        <a href="https://es.wikipedia.org/wiki/Bons%C3%A1i">bonsai</a>.
+      </p>
+      <p>
+        Los árboles pueden ser de hoja perenne (mantener sus hojas durante el
+        invierno) o deciduos (perder sus hojas en el invierno). La mayoría
+        produce algún tipo de fruta, aunque muchos tipos no son comestibles o se
+        usan raramente como alimentos en la actualidad. Por ejemplo, las
+        <a href="https://es.wikipedia.org/wiki/Bellota">bellotas</a> alguna vez
+        fueron un alimento estable, pero muchas personas en el mundo
+        desarrollado no las consumen hoy en día.
+        <b>Todos los árboles se reproducen con semillas</b>, y la mayoría de los
+        árboles encierran esas semillas en algún tipo de fruta. Tenga en cuenta
+        que las nueces son frutas técnicamente secas.
+      </p>
+    </div>
+
+    <div id="parrafo2">
+      <style>
+        h2 {
+          font-family: "Courier New", Courier, monospace;
+          font-weight: bold;
+        }
+      </style>
+      <h2>el Alcaparro:</h2>
+      <p>
+        También llamado Senna Viarum, es uno de los árboles con floración más
+        atractiva en los climas fríos de Colombia y Ecuador. Su altura máxima
+        reportada es de 15 m y el diámetro máximo del tronco a la altura del
+        pecho es de 25 cm. Su
+        <b>tronco es torcido e irregular y su corteza lisa</b>. Su copa de forma
+        arqueada y es amplia.
+      </p>
+      <p>
+        En ciertas temporadas del año se cubre con
+        <b>brillantes flores amarillas</b>, que lo vuelven visible desde muy
+        lejos. En los alrededores de Bogotá no crece silvestre, sin embargo se
+        lo cultiva con mucha frecuencia. En los jardines donde crece, ante una
+        mirada superficial, el alcaparro puede confundirse con el chicalá
+        (Tecoma stans). Sin embargo, este último árbol tiene flores en forma de
+        trompeta, mientras que las del alcaparro son más cortas, con los pétalos
+        separados.
+      </p>
+    </div>
+    <img src="alcaparro3.jpg" alt="ejemplo de alcaparro" id="imagen2" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="Tipos de plantas.html">PLANTAS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Arboles.html">Arboles</a>
+          <a class="nav-link" href="Plantas herbáceas.html"
+            >Plantas herbáceas</a
+          >
+          <a class="nav-link" href="Sin flores.html"
+            >Plantas in flores (Criptógamas)</a
+          >
+          <a class="nav-link" href="Con flores.html"
+            >Plantas con flores (Fanerógamas)</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

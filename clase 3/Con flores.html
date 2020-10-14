@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantas con flores</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        display: grid;
+        background-color: #5bf035b9;
+        gap: 10px;
+        margin-bottom: 30px;
+        grid-template-columns: 14% 40% 32% 14%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          ". nav nav ."
+          ". imagen1 imagen1 ."
+          ". parrafo1 parrafo1 ."
+          ". reproduccion ol ."
+          ". parrafo2 imagen2 .";
+      }
+
+      #nav {
+        grid-area: nav;
+      }
+      #imagen1 {
+        grid-area: imagen1;
+        width: 100%;
+      }
+      #parrafo1 {
+        grid-area: parrafo1;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #parrafo2 {
+        grid-area: parrafo2;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #ol {
+        grid-area: ol;
+        font-size: 13px;
+        background-color: rgba(89, 187, 24, 0.459);
+        padding: 10px;
+        border: dashed 2px rgb(27, 109, 6);
+        text-align: center;
+      }
+      #reproduccion {
+        grid-area: reproduccion;
+        width: 100%;
+        background-color: rgba(89, 187, 24, 0.459);
+        padding: 10px;
+        border: dashed 2px rgb(27, 109, 6);
+      }
+      #imagen2 {
+        grid-area: imagen2;
+        width: 100%;
+        padding: 10px;
+        border: solid 2px rgb(27, 109, 6);
+        background-color: rgba(27, 109, 6, 0.274);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="cerezo3.jpg"ejemplo de planta con flores" id="imagen1" />
+
+    <div id="parrafo1">
+      <style>
+        h1 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          line-height: 80%;
+        }
+      </style>
+      <h1>
+        Plantas con flores <br />
+        (Fanerógamas o espermatofitas)
+      </h1>
+      <p>
+        Referidas a las que conservan sus frutos dentro del
+        <a href="http://www.biologia.edu.ar/botanica/tema4/4_11gineceo.htm"
+          >ovario</a
+        >. Estas constituyen el grupo más grande, destacando por su ornato y
+        producción de frutas con semillas. Sobresalen árboles como el encino,
+        hierbas como los cereales y arbustos como el tomillo.
+      </p>
+      <p>
+        Las angiospermas corresponden a la
+        <b>única flora que sobreviven en los diferentes hábitats de la Tierra</b
+        >. Quizás el único medio que les ha sido difícil dominar son las zonas
+        polares. Así se ven cactus en las áreas desérticas, posidonias en las
+        profundidades del mar y edelweiss en lo alto de las serranías.
+      </p>
+      <p>
+        Si se piensa rápidamente, las plantas con semillas son probablemente el
+        grupo más familiar para la mayor parte de las personas, no solo desde la
+        perspectiva alimenticia (pues a partir de las semillas de muchas plantas
+        se obtienen aceites, almidones y proteínas), sino también desde el punto
+        de vista paisajístico.
+      </p>
+    </div>
+    <div id="ol">
+      <p>
+        De este modo, trajimos en orden de importancia las características de
+        este tipo de plantas:
+      </p>
+      <ol>
+        <li>
+          La principal característica de las espermatofitas o fanerógamas es la
+          <b>producción de semillas después de la polinización</b>, es decir,
+          como producto resultante de la fusión de dos células sexuales.
+        </li>
+        <li>
+          Son <b>organismos fotosintéticos</b>, es decir, tienen cloroplastos
+          que contienen clorofila, por lo que pueden convertir la energía
+          lumínica proveniente de los rayos del sol en energía química
+          aprovechable.
+        </li>
+        <li>
+          El cuerpo de estos vegetales está dividido en raíz, tallo y hojas.
+        </li>
+        <li>
+          Algunas espermatofitas, producen
+          <b>flores de donde se originan los frutos</b>, que son los que
+          contienen las semillas.
+        </li>
+        <li>
+          La mayor parte de las espermatofitas posee un
+          <b>tejido vascular</b> bien desarrollado, compuesto por tejido
+          xilemático y traqueidas.
+        </li>
+      </ol>
+    </div>
+
+    <img
+      src="reproduccion.jpg"
+      id="reproduccion"
+      alt="demostracion de la reproduccion de plantas con flores"
+    />
+
+    <div id="parrafo2">
+      <style>
+        h2 {
+          font-family: "Courier New", Courier, monospace;
+          font-weight: bold;
+        }
+      </style>
+      <h2>el Naranjo:</h2>
+      <p>
+        El Citrus sinensis, es un árbol frutal de origen oriental que se ha
+        instalado en las zonas mediterráneas tan eficientemente que muchos creen
+        que su origen real son estas tierras. Es originario de China, llevado a
+        occidente por los árabes. Se desarrolla bien en
+        <b>climas suaves y cálidos</b>, y en la Península Ibérica se cultiva
+        sobre todo en Valencia y en zonas de las
+        <a
+          href="https://www.google.com/maps/place/Terres+de+l'Ebre,+Tarragona,+Espa%C3%B1a/@40.9275529,-0.0369903,9z/data=!3m1!4b1!4m5!3m4!1s0x12a0e6f9bd3c8b4f:0x59afa3c4e0936907!8m2!3d40.7288023!4d0.5911307?hl=es"
+          >Tierras del Ebro</a
+        >, donde se suelen regar por inundación unas tres veces al año. No
+        soporta las heladas prolongadas.
+      </p>
+
+      <p>
+        Se trata de un árbol de altura media que no suele superar los 5 metros,
+        aunque en óptimas condiciones de cultivo llega hasta los 13 metros de
+        altura. Tiene una <b>copa con forma cónica</b> bastante grande y densa.
+      </p>
+    </div>
+    <img src="naranjo.jpg" alt="ejemplo de naranjo" id="imagen2" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="Tipos de plantas.html">PLANTAS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Arboles.html">Arboles</a>
+          <a class="nav-link" href="Plantas herbáceas.html"
+            >Plantas herbáceas</a
+          >
+          <a class="nav-link" href="Sin flores.html"
+            >Plantas in flores (Criptógamas)</a
+          >
+          <a class="nav-link" href="Con flores.html"
+            >Plantas con flores (Fanerógamas)</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

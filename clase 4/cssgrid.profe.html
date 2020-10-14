@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css grid</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        /* body sera el contenedor de la rejilla */
+        margin: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 33% 67%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "nav nav"
+          "imagen1 imagen1"
+          "texto1 imagen2"
+          "texto1 tabla"
+          "texto2 texto2";
+      }
+      #imagen1 {
+        grid-area: imagen1;
+      }
+      #texto1 {
+        grid-area: texto1;
+      }
+      #imagen2 {
+        grid-area: imagen2;
+        width: 100%;
+      }
+      #tabla {
+        grid-area: tabla;
+      }
+      #texto2 {
+        grid-area: texto2;
+      }
+      nav {
+        grid-area: nav;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="solar.jpg" alt="sistema solar" id="imagen1" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="texto1">
+      <p>
+        Este es el texto del primer texto. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Animi excepturi deleniti ipsa quae
+        molestiae quo voluptas. Quis alias est quaerat unde officiis sapiente
+        voluptatum, optio repudiandae eum porro id dolore!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+        consectetur quis, doloribus enim neque cupiditate sequi voluptate hic
+        rerum, quam, totam repudiandae amet porro provident laborum ipsa
+        corporis culpa ea?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque
+        illo perferendis impedit eligendi ipsam commodi, quo et perspiciatis
+        beatae, accusantium odio. Culpa cupiditate quidem pariatur consequuntur
+        accusantium reprehenderit quaerat.
+      </p>
+    </div>
+    <img
+      src="https://gimnasiovolta.edu.co/wp-content/uploads/2017/04/MG_1031-copia-290x200.jpg"
+      alt="Foto2"
+      id="imagen2"
+    />
+    <table id="tabla" class="table">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Briceño</td>
+      </tr>
+      <tr>
+        <td>Juan</td>
+        <td>Rojas</td>
+      </tr>
+    </table>
+    <p id="texto2">
+      Este es el texto del texto 2. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Quod debitis amet ipsa molestias et, rem ea nobis dolor
+      vel non ullam, sit neque perferendis. Ipsa sit libero voluptate eligendi
+      error.
+    </p>
+  </body>
+</html>

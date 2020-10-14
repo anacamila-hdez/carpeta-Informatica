@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr minmax(400px, 70%) 1fr;
+        /* grid-template-rows: auto minmax(200px, 30vh) auto; */
+        grid-template-areas:
+          "nav nav nav"
+          "img1 img1 img1"
+          ". contenido .";
+      }
+      nav {
+        grid-area: nav;
+      }
+      #img1 {
+        grid-area: img1;
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+      }
+      #contenido {
+        grid-area: contenido;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          >
+        </div>
+      </div>
+    </nav>
+    <img src="solar.jpg" alt="Imagen principal" id="img1" />
+    <main id="contenido">
+      <p>
+        este es el contenido Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Possimus quos nostrum consectetur qui amet iusto maxime
+        reiciendis, animi pariatur, quas, iste quaerat harum iure minima culpa!
+        Neque iure fuga culpa. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Aut quidem voluptatem voluptatum, tempora itaque
+        dolorem quam ab nulla error illo atque similique saepe incidunt
+        asperiores suscipit? Dignissimos quas doloremque sapiente?
+      </p>
+      <img src="solar.jpg" alt="imagen" />
+    </main>
+  </body>
+</html>

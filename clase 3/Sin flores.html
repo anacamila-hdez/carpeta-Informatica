@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantas sin flores</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        display: grid;
+        background-color: #5bf035b9;
+        gap: 10px;
+        margin-bottom: 30px;
+        grid-template-columns: 14% 40% 32% 14%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          ". nav nav ."
+          ". imagen1 imagen1 ."
+          ". parrafo1 parrafo1 ."
+          ". parrafo2 imagen2 .";
+      }
+
+      #nav {
+        grid-area: nav;
+      }
+      #imagen1 {
+        grid-area: imagen1;
+        width: 100%;
+      }
+      #parrafo1 {
+        grid-area: parrafo1;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #parrafo2 {
+        grid-area: parrafo2;
+        background-color: rgba(27, 109, 6, 0.274);
+        padding: 10px;
+      }
+      #imagen2 {
+        grid-area: imagen2;
+        width: 100%;
+        padding: 10px;
+        border: solid 2px rgb(27, 109, 6);
+        background-color: rgba(27, 109, 6, 0.274);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="criptogama.jpg" alt="ejemplo de planta sin flor" id="imagen1" />
+
+    <div id="parrafo1">
+      <style>
+        h1 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          line-height: 80%;
+        }
+      </style>
+      <h1>
+        Plantas sin flores <br />
+        (Criptógamas o gimnospermas)
+      </h1>
+      <p>
+        Las gimnospermas son plantas vasculares y espermatofitas, es decir, se
+        producen a partir de una semilla y las generan. El mismo origen griego
+        de la palabra gimnospermas nos da una pista de su principal
+        característica: de gymnos que es "desnudo" y de sperma que es "semilla",
+        por tanto, sus semillas están desnudas y no se desarrollan en un ovario
+        cerrado.
+      </p>
+      <p>
+        Las gimnospermas son plantas que se desarrollan prácticamente en todas
+        las zonas del mundo, pero son dominantes sobre todo en climas fríos y
+        árticos, como en la
+        <a href="https://www.bioenciclopedia.com/taiga/">taiga</a>.
+      </p>
+      <p>
+        Su principal característica, como se mencionó, es la producción de una
+        semilla que no se desarrolla en un ovario, siendo plantas
+        <b>sin flores ni frutos</b>. Sin embargo, a menudo puede considerarse a
+        su flor como una rama de crecimiento limitado que pueden formar conos o
+        piñas y que generan
+        <b>hojas fértiles o esporofilos con una semilla expuesta</b>. Sus sexos
+        están separados, así hay conos femeninos que producen óvulos y conos
+        masculinos que generan granos de polen.
+      </p>
+    </div>
+
+    <div id="parrafo2">
+      <style>
+        h2 {
+          font-family: "Courier New", Courier, monospace;
+          font-weight: bold;
+        }
+      </style>
+      <h2>el Helecho:</h2>
+      <p>
+        Los helechos son plantas que se caracterizan por unas
+        <b>hojas estrechas o frondes</b>, un tallo subterráneo y una particular
+        reproducción por medio de
+        <a href="https://dle.rae.es/recept%C3%A1culo">receptáculos</a>
+        denominados "esporangios", que permiten la multiplicación de la especie.
+        Estas plantas, que forman parte del grupo de las vivaces (su tallo dura
+        solo un año, pero mantiene partes subterráneas de las que brotan tallos
+        nuevos al año siguiente), se pueden cultivar tanto en interior como en
+        exterior.
+      </p>
+      <p>
+        Los hay por todas las regiones templadas y cálidas del mundo,
+        especialmente en las <b>selvas tropicales húmedas</b>. La mayoría de
+        ellos no tienen tallo, pero hay alguna que otra especie, como la Cyathea
+        cooperi, que llega a desarrollar un porte arbóreo muy bonito.
+      </p>
+    </div>
+    <img src="helecho2.jpg" alt="ejemplo de helecho" id="imagen2" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="Tipos de plantas.html">PLANTAS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Arboles.html">Arboles</a>
+          <a class="nav-link" href="Plantas herbáceas.html"
+            >Plantas herbáceas</a
+          >
+          <a class="nav-link" href="Sin flores.html"
+            >Plantas in flores (Criptógamas)</a
+          >
+          <a class="nav-link" href="Con flores.html"
+            >Plantas con flores (Fanerógamas)</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

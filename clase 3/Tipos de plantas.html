@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de plantas</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        width: 70%;
+        min-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #5bf035b9;
+
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "nav nav"
+          "imagen1 imagen1"
+          "parrafo1 clasificacion"
+          "parrafo2 tabla"
+          "mapamundi tabla";
+      }
+
+      #nav {
+        grid-area: nav;
+      }
+      #imagen1 {
+        grid-area: imagen1;
+        width: 100%;
+      }
+      #parrafo1 {
+        grid-area: parrafo1;
+      }
+      #clasificacion {
+        grid-area: clasificacion;
+        padding: 10px;
+        border: dashed 2px rgb(27, 109, 6);
+        background-color: rgba(15, 131, 15, 0.377);
+      }
+      #parrafo2 {
+        grid-area: parrafo2;
+      }
+      #mapamundi {
+        grid-area: mapamundi;
+        background-color: rgba(15, 131, 15, 0.377);
+        width: 100%;
+        border: solid 2px rgb(27, 109, 6);
+      }
+      #tabla {
+        grid-area: tabla;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="planta.jpeg" alt="plantita" id="imagen1" />
+    <div id="parrafo1">
+      <style>
+        h1 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+      </style>
+      <h1>Tipos de plantas</h1>
+      <p>
+        En el mundo hay <b>millones de especies</b> de plantas. Cada una de
+        ellas ha adoptado formas que les permiten capturar la mayor cantidad de
+        <a
+          href="https://es.wikipedia.org/wiki/Luz_solar#:~:text=La%20Organizaci%C3%B3n%20Meteorol%C3%B3gica%20Mundial%20define,%2C%20visible%20y%20ultra%2Dvioleta."
+          >luz solar</a
+        >
+        posible con el objetivo de crecer. Existen árboles, palmeras, cactus,
+        trepadoras… y todas hacen todo lo posible para seguir vivas un día más.
+      </p>
+      <p>
+        Cada variedad tiene sus propias características, por lo que vamos a ver
+        qué tipos de plantas hay en el mundo y para que sea más fácil esta
+        clasificación, vamos a atender a dos clasificaciones: en clases de
+        plantas según su tamaño y en clases de plantas según su forma de
+        reproducción.
+      </p>
+    </div>
+    <div id="clasificacion">
+      <style>
+        h3 {
+          font-size: 20px;
+        }
+      </style>
+      <h3 id="h3">1. Clases de plantas según su tamaño:</h3>
+      <ul>
+        <li><a href="Arboles.html">Arboles</a></li>
+        <li><a href="Plantas herbáceas.html">Plantas herbáceas</a></li>
+      </ul>
+      <h3 id="h3">2. Clases de plantas según su forma de reproducción:</h3>
+      <ul>
+        <li><a href="Sin flores.html">Plantas sin flores (Criptógamas)</a></li>
+        <li><a href="Con flores.html">Plantas con flores (Fanerógamas)</a></li>
+      </ul>
+    </div>
+    <div id="parrafo2">
+      <style>
+        h2 {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+      </style>
+      <h2>Importancia de las plantas</h2>
+      <p>
+        Las plantas son indispensables para la vida del planeta como la
+        conocemos, ya que son las responsables de la
+        <a
+          href="https://es.wikipedia.org/wiki/Historia_geol%C3%B3gica_del_ox%C3%ADgeno#:~:text=El%20ox%C3%ADgeno%20empez%C3%B3%20a%20persistir,r%C3%A1pido%20aumento%20del%20ox%C3%ADgeno%20libre."
+        >
+          oxigenación de la atmósfera</a
+        >, sin la cual los organismos que respiramos nos asfixiaríamos.
+      </p>
+      <p>
+        Además, las plantas fijan el carbono de la atmósfera en sus organismos,
+        ya que consumen el CO2 atmosférico, que de acumularse aumentaría el
+        efecto de invernadero y la temperatura global debido a que bloquean la
+        radiación del calor hacia afuera del planeta. Visto así,
+        <b>las plantas son el mecanismo de enfriamiento del planeta</b>.
+      </p>
+      <p>
+        De este modo, te mostramos un mapamundi y una tabla que muestra el
+        ranking de los países con mayor diversidad de plantas en el mundo para
+        que te des una idea de la gran importancia de estas:
+      </p>
+      <img src="mapamundi.png" alt="mapamundi" id="mapamundi" />
+    </div>
+
+    <table id="tabla" class="table table-bordered table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th>PAÍS</th>
+          <th>CARACTERÍSTICAS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <style>
+          tr {
+            background-color: rgba(15, 131, 15, 0.377);
+          }
+        </style>
+        <tr>
+          <th>1.</th>
+          <td>Australia</td>
+          <td>
+            alberga entre 660.000 y 700.000 especies de fauna y flora, aparte
+            cuenta con flora autóctona como la Hakea y los Banksia Nutans.
+          </td>
+        </tr>
+        <tr>
+          <th>2.</th>
+          <td>Brasil</td>
+          <td>50.000 especies de árboles y arbustos</td>
+        </tr>
+        <tr>
+          <th>3.</th>
+          <td>China</td>
+          <td>
+            Con una extensión de más de 9.500 millones de km2, China tiene gran
+            biodiversidad, aunque esta contraste con las aglomeradas urbes de
+            Pekín o Shanghái.
+          </td>
+        </tr>
+        <tr>
+          <th>4.</th>
+          <td>Sudáfrica</td>
+          <td>
+            la flora predominante son los pastos, los arbustos bajos y las
+            acacias.
+          </td>
+        </tr>
+        <tr>
+          <th>5.</th>
+          <td>Madagascar</td>
+          <td>
+            el 75% de sus bosques han desaparecido en las últimas décadas, aún
+            así está en el puesto 5 gracias a su permanente biodiversidad.
+          </td>
+        </tr>
+        <tr>
+          <th>6.</th>
+          <td>Ecuador</td>
+          <td>
+            rica región tropical, con humedales, por su privilegiada ubicación
+            geográfica en el neotrópico.
+          </td>
+        </tr>
+        <tr>
+          <th>7.</th>
+          <td>México</td>
+          <td>
+            uno de los países del mundo con mayor extensión de costas, lo que
+            supone el segundo arrecife más grande del mundo.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="Tipos de plantas.html">PLANTAS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Arboles.html">Arboles</a>
+          <a class="nav-link" href="Plantas herbáceas.html"
+            >Plantas herbáceas</a
+          >
+          <a class="nav-link" href="Sin flores.html"
+            >Plantas Sin flores (Criptógamas)</a
+          >
+          <a class="nav-link" href="Con flores.html"
+            >Plantas con flores (Fanerógamas)</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
