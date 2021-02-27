@@ -1,7 +1,7 @@
 let contador = JSON.parse(localStorage.getItem("contador"))
 
 if (contador == null){
-    localStorage.setItem("contador",0)
+    localStorage.setItem("contador",1)
 } else{
     suma();
 }
