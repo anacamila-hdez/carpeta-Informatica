@@ -38,11 +38,14 @@ function deleteTarea(){
     let materiaTareaABorrar = document.querySelector("#formularioDelete input[name=materia]").value
     
     let aBorrar = tareas.findIndex(tarea => tarea.materia == materiaTareaABorrar);
+
     if(aBorrar == -1) {
         alert("Tarea de la materia no encontrada")
     } else {
         tareas.splice(aBorrar, 1);
     }
+
+    localStorage.setItem("tareas", JSON.stringify(tareas));
 
     llenarTabla();
 
