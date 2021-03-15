@@ -40,10 +40,10 @@ function deleteTarea(){
     let aBorrar = tareas.findIndex(tarea => tarea.materia == materiaTareaABorrar);
     if(aBorrar == -1) {
         alert("Tarea de la materia no encontrada")
+    } else {
+        tareas.splice(aBorrar, 1);
     }
 
-    tareas.splice(aBorrar, 1);
-    
     llenarTabla();
 
     return false;
