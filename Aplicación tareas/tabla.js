@@ -1,7 +1,11 @@
-let tareas = []
+let tareas = JSON.parse(localStorage.getItem("tareas"));
+if (tareas == null) {
+    tareas = []
+};
 
 let tabla = document.querySelector('#tareas')
-// console.log(tabla)
+let form = document.querySelector("#formulario");
+
 function llenarTabla(){
     let contenidoTabla = '<tr><th>Materia</th><th>Descripción</th><th>Fecha</th></tr>'
     for (tarea of tareas){
@@ -12,26 +16,39 @@ function llenarTabla(){
     tabla.innerHTML = contenidoTabla;
 }
 
-let form = document.querySelector("#formulario");
-
 function addTarea(){
     let materiaNueva = document.querySelector("input[name=materia]").value
     let descripcionNueva = document.querySelector("input[name=descripcion]").value
     let fechaNueva = document.querySelector("input[name=fecha]").value
     
     let tareaNueva = {materia:materiaNueva, descripcion:descripcionNueva, fecha:fechaNueva}
-    console.log("Ahora voy a añadir la siguiente tarea");
-    console.log(tareaNueva)
 
-    // añado el planeta a la lista
     tareas.push(tareaNueva)
 
-    // generar de nuevo la tabla
+    localStorage.setItem("tareas", JSON.stringify(tareas));
+
     llenarTabla();
-    // return false hace que no se actualice la página.
-    return false;
 }
 
 form.onsubmit = addTarea;
+
+let formBorrar = document.querySelector("#formularioDelete");
+
+function deleteTarea(){
+    let materiaTareaABorrar = document.querySelector("#formularioDelete input[name=materia]").value
+    
+    let aBorrar = tareas.findIndex(tarea => tarea.materia == materiaTareaABorrar);
+    if(aBorrar == -1) {
+        alert("Tarea de la materia no encontrada")
+    }
+
+    tareas.splice(aBorrar, 1);
+    
+    llenarTabla();
+
+    return false;
+}
+
+formBorrar.onsubmit = deleteTarea;
 
 llenarTabla();
