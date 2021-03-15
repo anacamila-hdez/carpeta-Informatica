@@ -2,9 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAREAS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAREAS</title>
+
+  <style>
+    body{
+      display: block;
+      width: 70%;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
 </head>
 
 <link
@@ -30,7 +41,7 @@
     ></script>
 
 <body>
-    <form action="" id="formulario">
+    <form action="" id="formulario" class="needs-validation">
         Materia
         <input type="text" name="materia">
         Descripción
@@ -40,13 +51,14 @@
         <input type="submit">
     </form>
     
-    <form action="" id="formularioDelete">
+    <form action="" id="formularioDelete" class="needs-validation">
         Materia a borrar
         <input type="text" name="materia">
         <input type="submit">
     </form>
 
-    <table id="tareas"></table>
+    <table id="tareas" class="table table-striped"></table>
+
     <script src="tabla.js"></script>
 </body>
 

@@ -7,9 +7,10 @@ let tabla = document.querySelector('#tareas')
 let form = document.querySelector("#formulario");
 
 function llenarTabla(){
-    let contenidoTabla = '<tr><th>Materia</th><th>Descripción</th><th>Fecha</th></tr>'
+    let contenidoTabla = '<tr><th scope="col">Materia</th><th scope="col">Descripción</th><th scope="col">Fecha</th></tr>'
     for (tarea of tareas){
-        contenidoTabla = contenidoTabla + `<tr><td>${tarea.materia}</td><td>${tarea.descripcion}</td>
+        contenidoTabla = contenidoTabla + `<tr><td scope="row">${tarea.materia}</td>
+        <td>${tarea.descripcion}</td>
         <td>${tarea.fecha}</td></tr>`
     }
    
