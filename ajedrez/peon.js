@@ -2,38 +2,41 @@ let canvas = document.querySelector("#miCanvas")
 let ctx = canvas.getContext("2d")
 
 
-function dibujarPeon(xC, yC, r){
-    ctx.strokeStyle = 'black'
-    ctx.fillStyle = 'black'
+function dibujarPeon(x, y, r, color){
+    ctx.strokeStyle = color
+    ctx.fillStyle = color
 
     ctx.beginPath()
-    ctx.moveTo(xC,yC)
-    ctx.lineTo(xC-8, yC+25)
-    ctx.lineTo(xC+8, yC+25)
-    ctx.lineTo(xC,yC)
+    ctx.moveTo(x,y)
+    ctx.lineTo(x-r, y+r*2.5)
+    ctx.lineTo(x+r, y+r*2.5)
+    ctx.lineTo(x,y)
     ctx.stroke()
     ctx.fill()
 
     ctx.beginPath()
-    ctx.arc(xC, yC, r, 0, 2*Math.PI);
+    ctx.arc(x, y, r, 0, 2*Math.PI);
     ctx.stroke()
     ctx.fill()
 
     ctx.beginPath()
-    ctx.rect(xC-10,yC+25,r*2,5)
-    ctx.stroke()
-    ctx.fill()
-
-    ctx.beginPath()
-    ctx.rect(xC-r/1.7,yC+r,r*1.2,2)
+    ctx.rect(x-1.1*r, y+r*2.5, r*2.2, r/3)
     ctx.stroke()
     ctx.fill()
 }
 
-for(let x = 30; x < 280; x= x+35){
-    dibujarPeon(x, 30, 10)
+for(let x = 30; x < 260; x= x+30){
+    dibujarPeon(x, 30, 10, "blue")
 }
 
-for(let x = 30; x < 280; x= x+35){
-    dibujarPeon(x, 170, 10)
+for(let x = 30; x < 420; x= x+55){
+    dibujarPeon(x, 120, 20, "green")
+}
+
+for(let x = 55; x < 1020; x= x+135){
+    dibujarPeon(x, 270, 50, "pink")
+}
+
+for(let x = 10; x < 160; x= x+20){
+    dibujarPeon(x, 450, 5, "gray")
 }
