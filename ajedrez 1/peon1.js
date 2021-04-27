@@ -2,9 +2,9 @@ let canvas = document.querySelector("#miCanvas")
 let ctx = canvas.getContext("2d")
 
 
-function dibujarPeon(xC, yC, r){
+function dibujarPeon(xC, yC, r, color){
     ctx.strokeStyle = 'black'
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = color
 
     ctx.beginPath()
     ctx.moveTo(xC,yC)
@@ -31,9 +31,9 @@ function dibujarPeon(xC, yC, r){
 }
 
 for(let x = 30; x < 280; x= x+35){
-    dibujarPeon(x, 30, 10)
+    dibujarPeon(x, 30, 10, 'black')
 }
 
 for(let x = 30; x < 280; x= x+35){
-    dibujarPeon(x, 170, 10)
+    dibujarPeon(x, 170, 10, 'white')
 } 
